@@ -1,11 +1,12 @@
 <?php
- function somar($numero1, $numero2){
-    return $numero1 + $numero2;
+ function verificaMedia($media){
+    if ($media >= 7) {
+        return "Aprovado";
+    } else {
+        return "reprovado";
+    }
  }
-
- $resultado = somar(5, 3);
- echo $$resultado
-
-
+ echo verificaMedia(7);
+ 
 
 ?>
