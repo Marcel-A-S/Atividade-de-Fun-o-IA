@@ -7,9 +7,9 @@ function calcularMedia($nota1, $nota2, $nota3) {
 
 function verificarMedia($media) {
     if ($media >= 7) {
-        return "Aprovado";
+        return "O aluno está aprovado";
     } else {
-        return "Reprovado";
+        return "O aluno está reprovado";
     }
 }
 

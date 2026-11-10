@@ -9,7 +9,7 @@ function verificarMedia($media) {
     if ($media >= 7) {
         return "O aluno está aprovado";
     } else {
-        return "O aluno não está aprovado";
+        return "O aluno está aprovado";
     }
 }
 
