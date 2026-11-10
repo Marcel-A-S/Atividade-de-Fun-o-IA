@@ -1,4 +1,9 @@
+
 <?php
+
+function calcularMedia($nota1, $nota2, $nota3) {
+    return ($nota1 + $nota2 + $nota3) / 3;
+}
 
 function verificarMedia($media) {
     if ($media >= 7) {
@@ -8,9 +13,10 @@ function verificarMedia($media) {
     }
 }
 
-// Testando a função
-echo "Média 7.0: " . verificaMedia(7);
-echo "<br>";
-echo "Média 5.5: " . verificaMedia(5.5);
+$media = calcularMedia(8, 6, 10);
+
+// Exibindo a média e a situação do aluno
+echo "Média final: " . number_format($media, 2, ',', '.') . "<br>";
+echo "Situação: " . verificarMedia($media);
 
 ?>
